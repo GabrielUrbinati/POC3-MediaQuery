@@ -77,7 +77,7 @@ Foram implementadas **media queries** específicas para três tipos de dispositi
         margin-bottom: 10px;
     }
 }
-
+```
 - **Tablets (min-width: 601px e max-width: 900px)**:
     - A galeria de imagens é organizada em duas colunas, utilizando melhor o espaço disponível.
 
@@ -88,7 +88,7 @@ Foram implementadas **media queries** específicas para três tipos de dispositi
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+```
 - **Desktops (min-width: 901px)**:
     - A galeria de imagens é exibida em três colunas, aproveitando a largura adicional das telas maiores.
 
@@ -99,6 +99,7 @@ Foram implementadas **media queries** específicas para três tipos de dispositi
         grid-template-columns: repeat(3, 1fr);
     }
 }
+```
 #### 3. Detecção de Orientação (Landscape e Portrait)
 
 O layout também responde à **orientação do dispositivo**, ou seja, a página detecta se o dispositivo está em modo **landscape** ou **portrait**, e ajusta a disposição do conteúdo.
@@ -113,13 +114,13 @@ O layout também responde à **orientação do dispositivo**, ou seja, a página
         flex-direction: row;
     }
 }
-
+```
 ## Como Usar
 
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
-
+```
 2. Abra o arquivo index.html em seu navegador.
 
 3. Inspecione o layout em diferentes dispositivos (ou use o modo de desenvolvimento do navegador para simular diferentes tamanhos de tela).
