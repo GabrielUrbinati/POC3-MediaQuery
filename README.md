@@ -129,13 +129,13 @@ O layout também responde à **orientação do dispositivo**, ou seja, a página
 Para isso, no navegador (Google Chrome ou Firefox, por exemplo), pressione F12 para abrir as ferramentas de desenvolvedor e selecione a aba de Responsividade (ícone de dispositivos móveis).
 Verifique como o layout se adapta a diferentes larguras de tela (smartphones, tablets e desktops).
 
-####Para testar a funcionalidade de impressão:
+#### Para testar a funcionalidade de impressão:
 
 Pressione Ctrl + P (Windows) ou Cmd + P (Mac).
 Visualize como a página é ajustada para o formato de impressão, com o menu e rodapé ocultos e o conteúdo distribuído em colunas.
 
-####Tecnologias Utilizadas
+#### Tecnologias Utilizadas
 
-HTML5: Marcações semânticas para estruturar a página.
-CSS3: Estilos e media queries para responsividade e adaptação ao contexto de impressão.
+#### HTML5: Marcações semânticas para estruturar a página.
+#### CSS3: Estilos e media queries para responsividade e adaptação ao contexto de impressão.
 
