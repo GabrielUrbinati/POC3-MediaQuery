@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Breakpoints</title>
+    <style>
+        /* estilo global */
+body {
+    font-family: Verdana, Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* imagem de fundo */
+.transparente {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* estilo do cabecalho */
+header {
+    background-color: #d6232383;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* estilo do menu de navegacão */
+nav {
+    background-color: #da6969; /* Faixa separando o menu do corpo */
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(221, 99, 99, 0.1); /* Sombra para dar destaque */
+    border-bottom: 4px solid #c28b8b; /* Borda inferior */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Suaviza a mudança de cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cor de fundo mais visível ao passar o mouse */
+    border-radius: 5px; /* Borda arredondada ao passar o mouse */
+}
+
+/* conteudo prncipal */
+main {
+    padding: 20px;
+}
+
+/* galeria de imagem */
+.gallery {
+    display: grid;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* layout para smartphones (max-width: 600px) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        margin-bottom: 10px;
+        height: 150px; /* garantindo altura uniforme para melhor visualizacao */
+    }
+}
+
+/* layout para tablets (min-width: 601px e max-width: 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* layout para desktops (min-width: 901px) */
+@media (min-width: 901px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* media query para landscape */
+@media (orientation: landscape) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* media query para impressao */
+@media print {
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: black;
+    }
+
+    nav, footer, .no-print {
+        display: none;
+    }
+
+    /* colunas para o conteudo impresso */
+    main {
+        columns: 2;
+        column-gap: 20px;
+    }
+
+    article {
+        columns: 2;
+        column-gap: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- imagem de fundo transparente -->
+    <div class="transparente">
+    </div>
+
+    <header>
+        <h1>Media Query</h1>
+    </header>
+
+    <!-- menu de navegacao -->
+    <nav class="no-print">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- conteudo principal -->
+    <main>
+        <section>
+            <h2>Breakpoints</h2>
+            <p>Este é um exemplo de como usar breakpoints para alterar o layout de acordo com o tamanho da tela.</p>
+            Curabitur tortor. Pellentesque nibh. Maecenas mattis.Maecenas mattis.Maecenas mattis.Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce
+            
+        </section>
+
+        <!-- galeria adaptavel para diferentes dispositivos) -->
+        <section class="gallery">
+            <img src="150por150.jpg" alt="Imagem 1">
+            <img src="150por1502.jpg" alt="Imagem 2">
+            <img src="150por1503.jpg" alt="Imagem 3">
+            <img src="150por1504.jpg" alt="Imagem 4">
+        </section>
+    </main>
+
+    
+    <footer class="no-print">
+        <p>&copy; 2024 Meu Website</p>
+    </footer>
+</body>
+</html>
