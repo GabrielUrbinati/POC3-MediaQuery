@@ -120,7 +120,8 @@ O layout também responde à **orientação do dispositivo**, ou seja, a página
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
-```
+
+
 2. Abra o arquivo index.html em seu navegador.
 
 3. Inspecione o layout em diferentes dispositivos (ou use o modo de desenvolvimento do navegador para simular diferentes tamanhos de tela).
