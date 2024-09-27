@@ -49,7 +49,7 @@ O projeto inclui uma **media query para impressão** que reorganiza o layout par
         column-gap: 20px;
     }
 }
-
+```
 
 #### 2. Media Queries para Diferentes Tamanhos de Dispositivos
 
